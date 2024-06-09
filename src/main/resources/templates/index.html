@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="#" data-th-href="@{webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Unju</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/css/styles.css"></link>
+		 <style>
+        .header {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        .header img {
+            height: 200px;
+            margin-right: 15px;
+        }
+        .header .faculty-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .header .faculty-slogan {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #6c757d;
+        }
+         .aside-menu {
+            background-color: #343a40;
+            color: white;
+            height: 100vh;
+            padding: 15px;
+        }
+        .aside-menu a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+        .aside-menu a:hover {
+            background-color: #495057;
+            text-decoration: none;
+        }
+        .footer-contact, .footer-social, .footer-copyright {
+            padding: 15px 0;
+        }
+        .footer-contact ul, .footer-social ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-social ul {
+            display: flex;
+            gap: 10px;
+        }
+        .footer-social a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-social a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container d-flex align-items-center">
+        <img src="/imagenes/logofacu.png" alt="Logotipo de la Facultad de Ingeniería de ">
+        <div>
+            <div class="faculty-name">Facultad de Ingeniería de Jujuy</div>
+            <div class="faculty-slogan">"Innovación y excelencia en ingeniería"</div>
+        </div>
+    </div>
+</header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            Facultad de Ingeniería de Jujuy
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#acerca-de">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carreras">Carreras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#noticias">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content with Sidebar -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <aside class="col-md-2 aside-menu">
+            <h5>Menú</h5>
+            <a href="#biblioteca">Biblioteca</a>
+            <a href="#calendario-academico">Calendario Académico</a>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="col-md-10">
+            <div id="inicio" class="p-4">
+                <h2>FIUNJU</h2>
+                <p>Bienvenidos a la Facultad de Ingeniería de Jujuy.</p>
+                <p>La Facultad de Ingeniería de Jujuy es una institución de excelencia académica, dedicada a la formación de profesionales en diversas áreas de la ingeniería. Con un compromiso con la innovación y el desarrollo tecnológico, nuestra facultad ofrece programas de estudio que preparan a los estudiantes para enfrentar los desafíos del mundo moderno.</p>
+            </div>
+            <div id="carreras" class="p-4">
+                <h2>Carreras</h2>
+                <p>La Facultad de Ingeniería de Jujuy ofrece las siguientes carreras:</p>
+                <ul>
+                    <li>Ingeniería Informatica</li>
+                    <li>Ingeniería de Minas</li>
+                    <li>Ingeniería Quimica</li>
+                    <li>Analista Programador Universitario</li>
+                    <li>Tecnicatura Universitaria en Diseño Integral de Videojuegos</li>
+                    <li>Tecnicatura Universitaria en Perforaciones</li>
+                </ul>
+            </div>
+           <div id="noticias" class="p-4">
+    <h2>Noticias Recientes</h2>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Inauguración del Nuevo Laboratorio de Ingeniería</h5>
+            <p class="card-text">El pasado viernes, la Facultad de Ingeniería de Jujuy inauguró su nuevo laboratorio de ingeniería, equipado con tecnología de última generación.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Conferencia sobre Inteligencia Artificial</h5>
+            <p class="card-text">Próxima conferencia sobre los avances más recientes en inteligencia artificial, organizada por el departamento de Ingeniería Informática.</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">Competencia de Robótica</h5>
+            <p class="card-text">La Facultad de Ingeniería de Jujuy celebrará su competencia anual de robótica el próximo mes. ¡Prepárate para participar!</p>
+            <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+    </div>
+</div>
+            <div id="contacto" class="p-4">
+                <h2>Contacto</h2>
+                <p>Cómo ponerse en contacto con nosotros.</p>
+            </div>
+        </main>
+    </div>
+</div>
+        <!-- Footer -->
+<footer class="bg-dark text-white pt-4">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li>Dirección: Av. Italia 2. (CP 4600) San Salvador de Jujuy - Jujuy - Argentina</li>
+                    <li>Teléfono: +54 388 422-1585</li>
+                    <li>Correo electrónico: info@ingenieria.unju.edu.ar</li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-4">
+                <h5>Redes Sociales</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://facebook.com" class="text-white">Facebook</a></li>
+                    <li><a href="https://twitter.com" class="text-white">Twitter</a></li>
+                    <li><a href="https://instagram.com" class="text-white">Instagram</a></li>
+                    <li><a href="https://linkedin.com" class="text-white">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <!-- Copyright -->
+            <div class="col-md-4">
+                <h5>Derechos de Autor</h5>
+                <p>&copy; 2024 Facultad de Ingeniería de Jujuy. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+		<script data-th-src="@{webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+	</body>
+</html>
