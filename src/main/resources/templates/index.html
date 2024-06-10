@@ -28,21 +28,12 @@
 <body>
 
 <!-- Header -->
-<header class="header">
-    <div class="container d-flex align-items-center">
-        <img src="/imagenes/logofacu.png" alt="Logotipo de la Facultad de Ingeniería de ">
-        <div>
-            <div class="faculty-name">Facultad de Ingeniería de Jujuy</div>
-            <div class="faculty-slogan">"Innovación y excelencia en ingeniería"</div>
-        </div>
-    </div>
+<div data-th-replace="~{fragments/header :: header}"></div>
     <div data-th-replace="~{fragments/header :: navbar}"></div>
-</header>
-
-<!-- Main Content with Sidebar -->
+<!-- Main Content with aside -->
 <div class="container-fluid">
     <div class="row">
-        <!-- Sidebar -->
+        <!-- aside -->
 
         <aside class="col-md-2 aside-menu">
             <h5>Menú</h5>
@@ -98,7 +89,7 @@
 </div>
 
 <!-- Footer -->
-		        <div data-th-replace="~{fragments/footer::footer}"></div>
+<div data-th-replace="~{fragments/footer::footer}"></div>
 <script data-th-src="@{webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>

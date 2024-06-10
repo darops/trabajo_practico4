@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Insert title here</title>
 </head>
 <body>
+<header class="header bg-light text-dark" data-th-fragment="header">
+    <div class="container d-flex align-items-center">
+        <img src="/imagenes/logofacu.png" alt="Logotipo de la Facultad de Ingeniería de ">
+        <div>
+            <div class="faculty-name">Facultad de Ingeniería de Jujuy</div>
+            <div class="faculty-slogan">"Innovación y excelencia en ingeniería"</div>
+        </div>
+    </div>
+</header>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-th-fragment="navbar">
     <div class="container">
@@ -16,27 +27,54 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#acerca-de">Acerca de</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#carreras">Carreras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#noticias">Noticias</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
+            
+                <li><a class="nav-link " href="/">Inicio</a></li>
+        		<li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Lista de Materias
+          			</a>
+        			<ul class="dropdown-menu">
+        				<li><a class="dropdown-item " href="/formularioMaterias">Formulario</a></li>
+            			<li><hr class="dropdown-divider"></li>
+            			<li><a class="dropdown-item " href="/materias">Listado</a></li>
+        			</ul>
+        		</li>
+                <li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Lista de Carreras
+          			</a>
+        			<ul class="dropdown-menu">
+        				<li><a class="dropdown-item " href="/formularioCarreras">Formulario</a></li>
+            			<li><hr class="dropdown-divider"></li>
+            			<li><a class="dropdown-item " href="/carreras">Listado</a></li>
+        			</ul>
+        		</li>
+                <li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Lista de Docentes
+          			</a>
+        			<ul class="dropdown-menu">
+        				<li><a class="dropdown-item " href="/formularioDocentes">Formulario</a></li>
+            			<li><hr class="dropdown-divider"></li>
+            			<li><a class="dropdown-item " href="/docentes">Listado</a></li>
+        			</ul>
+        		</li>
+                <li class="nav-item dropdown">
+        			<a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            			Lista de Alumnos
+          			</a>
+        			<ul class="dropdown-menu">
+        				<li><a class="dropdown-item " href="/formularioAlumnos">Formulario</a></li>
+            			<li><hr class="dropdown-divider"></li>
+            			<li><a class="dropdown-item " href="/alumnos">Listado</a></li>
+        			</ul>
+        		</li>
             </ul>
         </div>
     </div>
  <br>
  <br>
-
 </nav>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
